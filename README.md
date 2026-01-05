@@ -1,2 +1,2 @@
-# Github-actions
+# Github.actions
 Implement Github Actions
