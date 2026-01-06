@@ -25,5 +25,10 @@ jobs:
 
       - name: Run lintr
         run: |
-          lintr::lint_dir("R", fail_on_error = TRUE)
+          lints <- lintr::lint_dir("R")
+          if (length(lints) > 0) {
+            print(lints)
+            stop("Lint errors found")
+          }
         shell: Rscript {0}
+
