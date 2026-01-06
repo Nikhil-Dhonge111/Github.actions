@@ -1,1 +1,3 @@
-bad=function(x){x+1}
+bad <- function(x) {
+  x + 1
+}
